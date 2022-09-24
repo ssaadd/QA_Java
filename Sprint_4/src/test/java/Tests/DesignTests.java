@@ -40,9 +40,9 @@ public class DesignTests extends BaseTest {
 
         MainPage objMainPage = new MainPage(driver);
         objMainPage.openAccordionElement(accordionHeaderText);
-        String result = objMainPage.getAccordionElementText(objMainPage.getAccHeaderText());
+        String result = objMainPage.getAccordionElementText(accordionHeaderText);
 
-        assertEquals(accordionParText, result);
+        assertEquals("Текст в Ответе не совпадает с текстом из списка", accordionParText, result);
     }
 
 
