@@ -15,9 +15,9 @@ public class DesignTests extends BaseTest {
     private final String accordionHeaderText;
     private final String accordionParText;
 
-    public DesignTests(String text1, String text2) {
-        this.accordionHeaderText = text1;
-        this.accordionParText = text2;
+    public DesignTests(String accordionHeaderText, String accordionParText) {
+        this.accordionHeaderText = accordionHeaderText;
+        this.accordionParText = accordionParText;
     }
 
     @Parameterized.Parameters
